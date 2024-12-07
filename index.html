@@ -1,100 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chido - Web Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Your Name</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with Navbar -->
-    <header>
-        <div class="logo">Chido</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span>Your Name</span></h1>
+      <p>A Passionate Web Developer & Designer</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+      <a href="#contact" class="btn btn-alt">Contact Me</a>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>A passionate web developer who loves creating seamless digital experiences</p>
-            <a href="#portfolio" class="btn">See My Work</a>
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="your-photo.jpg" alt="Your Photo" class="profile-img">
+        <div class="about-text">
+          <p>I'm <strong>Your Name</strong>, a full-stack web developer specializing in building intuitive, user-focused applications. I combine technical expertise with creative design to deliver modern solutions for businesses and individuals.</p>
+          <h3>Skills</h3>
+          <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>Git & GitHub</li>
+            <li>Figma</li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Me Section -->
-    <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="your-photo.jpg" alt="Your Photo">
-            <p>Hello! I'm a web developer with expertise in front-end and back-end technologies. I specialize in creating dynamic, responsive websites that are visually appealing and user-friendly.</p>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="project-grid">
+        <!-- Example Project Card -->
+        <div class="project-card">
+          <img src="project1-thumbnail.jpg" alt="Project 1">
+          <h3>E-commerce Store</h3>
+          <p>A responsive e-commerce website with custom cart and payment gateway.</p>
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn btn-alt">GitHub Repo</a>
         </div>
-    </section>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills" data-aos="fade-up">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-item">
-                <h3>HTML</h3>
-                <div class="skill-bar html"></div>
-            </div>
-            <div class="skill-item">
-                <h3>CSS</h3>
-                <div class="skill-bar css"></div>
-            </div>
-            <div class="skill-item">
-                <h3>JavaScript</h3>
-                <div class="skill-bar js"></div>
-            </div>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear about your project. Let's create something amazing together!</p>
+      <form action="https://formspree.io/f/{your-id}" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <div class="overlay">
-                    <h3>Project 1</h3>
-                    <p>Web design and development for a client.</p>
-                </div>
-            </div>
-            <!-- More portfolio items -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="submit-form.php" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>Connect with me: 
-            <a href="https://github.com/yourprofile" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        </p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a>
+    </div>
+  </footer>
 </body>
 </html>
