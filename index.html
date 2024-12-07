@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Professional Profile</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
 <body>
+    <!-- Header with Navbar -->
+    <header>
+        <div class="logo">Your Name</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1>Your Name</h1>
-      <p>Web Developer | Designer | Creator</p>
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>A passionate web developer who loves creating seamless digital experiences</p>
+            <a href="#portfolio" class="btn">See My Work</a>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Brief bio about your professional journey, education, and skills.</p>
-  </section>
+    <!-- About Me Section -->
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="your-photo.jpg" alt="Your Photo">
+            <p>Hello! I'm a web developer with expertise in front-end and back-end technologies. I specialize in creating dynamic, responsive websites that are visually appealing and user-friendly.</p>
+        </div>
+    </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-gallery">
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project Title 1</h3>
-        <p>Short description of the project.</p>
-      </div>
-      <!-- Repeat for more projects -->
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h3>HTML</h3>
+                <div class="skill-bar html"></div>
+            </div>
+            <div class="skill-item">
+                <h3>CSS</h3>
+                <div class="skill-bar css"></div>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+                <div class="skill-bar js"></div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5, CSS3, JavaScript</li>
-      <li>Web Design</li>
-      <li>React, Node.js</li>
-      <li>Photoshop, Figma</li>
-    </ul>
-  </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="overlay">
+                    <h3>Project 1</h3>
+                    <p>Web design and development for a client.</p>
+                </div>
+            </div>
+            <!-- More portfolio items -->
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="submit_form.php" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit-form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-    <ul>
-      <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
-      <li><a href="https://github.com/yourprofile">GitHub</a></li>
-    </ul>
-  </footer>
+    <footer>
+        <p>Connect with me: 
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
