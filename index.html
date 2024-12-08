@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Your Name</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Your Name]</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="hero">
-    <div class="container">
-      <h1>Hi, I'm <span>Your Name</span></h1>
-      <p>A Passionate Web Developer & Designer</p>
-      <a href="#portfolio" class="btn">View My Work</a>
-      <a href="#contact" class="btn btn-alt">Contact Me</a>
-    </div>
-  </header>
-
-  <!-- About Me Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <img src="your-photo.jpg" alt="Your Photo" class="profile-img">
-        <div class="about-text">
-          <p>I'm <strong>Your Name</strong>, a full-stack web developer specializing in building intuitive, user-focused applications. I combine technical expertise with creative design to deliver modern solutions for businesses and individuals.</p>
-          <h3>Skills</h3>
-          <ul class="skills">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>Git & GitHub</li>
-            <li>Figma</li>
-          </ul>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>[Your Name]</h1>
+            <p>Software Engineer | Web Developer | Problem Solver</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="project-grid">
-        <!-- Example Project Card -->
-        <div class="project-card">
-          <img src="project1-thumbnail.jpg" alt="Project 1">
-          <h3>E-commerce Store</h3>
-          <p>A responsive e-commerce website with custom cart and payment gateway.</p>
-          <a href="#" class="btn">Live Demo</a>
-          <a href="#" class="btn btn-alt">GitHub Repo</a>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate software engineer with a focus on creating efficient, user-friendly solutions. 
+                With experience in full-stack development and a keen eye for detail, I enjoy turning complex 
+                problems into elegant, functional designs.
+            </p>
         </div>
-        <!-- Add more project cards as needed -->
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>I'd love to hear about your project. Let's create something amazing together!</p>
-      <form action="https://formspree.io/f/{your-id}" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A brief description of your project showcasing your work.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A brief description of your project showcasing your work.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>A brief description of your project showcasing your work.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-    <div class="social-links">
-      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a>
-    </div>
-  </footer>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Programming: Python, JavaScript, Java</li>
+                <li>Web Development: HTML, CSS, React</li>
+                <li>Databases: MySQL, MongoDB</li>
+                <li>Tools: Git, Docker, AWS</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/{your-email}" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 [Your Name]. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
